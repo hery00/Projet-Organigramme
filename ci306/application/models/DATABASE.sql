@@ -1,8 +1,5 @@
 create database Organigramme;
 
-
-
-
 create table personnel
 (
     id_personnel serial not null,
@@ -20,7 +17,7 @@ insert into personnel values(default,'Randriamaro','Daniel','membre du CA',1);
 insert into personnel values(default,'Rakotoson','Dera','membre du CA',null);
 insert into personnel values(default,'Razakandraina','Jeannot','membre du CA',1);
 
-insert into personnel values(default,'Andrianimanana','Herinianina','Directeur General',1);
+insert into personnel values(default,'Andrianimanana','Heriniaina','Directeur General',1);
 
 insert into personnel values(default,'Razakaboana','Tahiana','Chef Departement informatiques',6);
 insert into personnel values(default,'Randriamasy','Augustin','Chef Departement Marketing',6);
