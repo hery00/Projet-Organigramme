@@ -1,0 +1,33 @@
+1) sudo systemctl start postgresql.service
+
+2) sudo -i -u postgres
+
+3) createuser --interactive ("y" refa eo amle superuser)
+
+4) createdb <anaranle user teo ambony>
+
+5) logout
+
+6) sudo systemctl restart postgresql.service
+
+7) sudo adduser <anaranle user teo ambony> --disabled-login
+
+8) sudo -i -u postgres
+
+9) psql
+
+10) alter user <anaranle user teo ambony> password '<new_password>'
+
+11) \q
+
+12) logout
+
+13) sudo -i -u <user anla vo noforonina>
+
+14) psql
+
+15) \c <anarana teo amle createdb anla>
+
+16) Afaka miasa
+
+Sura !!

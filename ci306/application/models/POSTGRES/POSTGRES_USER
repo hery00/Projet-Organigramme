@@ -1,0 +1,17 @@
+First step :
+	=> psql user creation:
+		. sudo systemctl start postgresql.service
+		. sudo -i -u postgres
+		. createuser --interactive (has to be superuser)
+		. createdb <db_name> (db_name = username)
+LOG OUT 
+
+Second step :
+	=> linux user link:
+		. sudo systemctl restart postgresql.service
+		. sudo adduser <user_name> --disabled-login
+
+Third step :
+	=> psql as new_user:
+		.sudo -i -u <user_name>
+		.psql

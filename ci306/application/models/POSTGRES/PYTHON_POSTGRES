@@ -1,0 +1,23 @@
+Database connection:
+	=> psycopg2.connect("dbname=... user=... password=...")
+	=> psycopg2.connect(
+		host="localhost",
+		database="...",
+		user="...",
+		password="...")
+
+Cursor:
+	=> cursor = connection.cursor()
+	=> sql request
+	=> cursor.execute(sql request)
+
+Plus:
+	=> connection.commit()
+	=> cursor.close()
+	=> connection.close()
+	
+	
+NB : 
+	=> ALTER postgres PASSWORD '<password>';
+	
+TRY WITH THE USER YOU CREATED YOURSELF

@@ -1,0 +1,28 @@
+# Caps on only
+
+Connection to postgres :
+	=> sudo -i -u postgres
+	=> psql
+
+Create user :
+	=> CREATE USER <name>
+	=> CREATE USER <name> SUPERUSER LOGIN WITH PASSWORD <password>
+	=> CREATE USER <name> WITH PASSWORD '<password>'
+	=> CREATE USER <name> WITH PASSWORD '<password>' CREATEDB
+
+Create database :
+	=> CREATE DATABASE <database_name>;
+
+List database :
+	=> \l
+
+Connect to database :
+	=> \c <database_name>
+
+Create table : as usual (you can use IF NOT EXISTS)
+
+List tables :
+	=> \dt
+	=> \dt <table_name>
+
+FOREIGN KEY : CONSTRAINT FOREIGN KEY(col) REFERENCES parent(col)
