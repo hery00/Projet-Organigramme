@@ -1,0 +1,39 @@
+Ny fomba anaovatsika ilay devoir otrzao:
+
+	za manao database(+donnee de test)
+	Ndry manao Model sy Controller
+	de za manao ny View rehetra
+	
+
+de le fandehan'ilay devoir otrzao:
+
+	Ny essentiel:
+	
+	1) Manamboatra page misy Liste ana poste tsika misy ilay hierarchie par poste
+	2)Manamboatra formulaire misy ilay questioannaire ahafahana mgenerer an'ilay poste
+	
+	Contenue mety ilaina hafa:
+	a propos anilay site(mbola facultatif)
+	-Login
+	-Inscription
+	-liste des personnels
+	-recherche
+	
+	
+	Outil:
+	Html/css/bootstrap
+	php Codeigneter
+	Postgresql(ahafahana manao requete hierarchique)
+
+
+fonctionnalités:
+
+	1)mipoitra le listes des personnels rehetra aloha(mba hahafahana mamantatra ny isan Mpiasa sy ny mpiasa rehetra)
+	2)Liste hierachiques ny personnels (mandeha par poste et branche)
+	3)formulaire pour creer la fiche de poste
+	4)Raha vita ireo dia afaka manampy fonctionnalité hafa tsika toy ny recherche...
+	
+	
+	
+	
+	- 
