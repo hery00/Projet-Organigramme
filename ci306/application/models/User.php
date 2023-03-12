@@ -25,7 +25,7 @@
         }
         public function inscri_user($nom,$prenom,$email,$mdp,$confirm_mdp)
         {
-            $requete = "insert into users values(%s,%s,%s,%s)";
+            $requete = "insert into users values(default,%s,%s,%s,%s)";
             $requete = sprintf($requete,$this->db->escape($nom),$this->db->escape($prenom),$this->db->escape($email),$this->db->escape($mdp),$this->db->escape($confirm_mdp));
             $this->db->escape($requete);
             $line = $this->db->query($requete);
