@@ -5,7 +5,7 @@
     {
         public function check_Login($email,$mdp)
         {
-            $requete = "select * from user";
+            $requete = "select * from users";
             $query = $this->db->query($requete);
             $rs = array();
 
@@ -25,7 +25,7 @@
         }
         public function inscri_user($nom,$prenom,$email,$mdp,$confirm_mdp)
         {
-            $requete = "insert into user values(null,%s,%s,%s,%s,0)";
+            $requete = "insert into users values(%s,%s,%s,%s)";
             $requete = sprintf($requete,$this->db->escape($nom),$this->db->escape($prenom),$this->db->escape($email),$this->db->escape($mdp),$this->db->escape($confirm_mdp));
             $this->db->escape($requete);
             $line = $this->db->query($requete);
