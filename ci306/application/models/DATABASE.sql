@@ -48,13 +48,14 @@ WITH RECURSIVE hierarchie(id_personnel, Nom,Prenom,Poste,Manager, niveau, chemin
 SELECT id_personnel, Nom,Prenom,Poste, Manager, niveau,chemin
 FROM hierarchie;
 
-create table user
+create table utilisateur
 (
-    id_user serial no null,
+    id_user serial not null,
     Nom varchar(200),
     Prenom varchar(50),
     Email varchar(50),
-    Pwd varchar(20)
+    Pwd varchar(20),
+    primary key(id_user)
 );
 -- raha iselect anle hierarchie de  " select * from perso_hierarchie";
 -- raha iselect hierarchie par chef de select * from perso_hierarchie
