@@ -6,7 +6,7 @@ create table personnel
     Nom varchar(200),
     Prenom varchar(100),
     Poste varchar(100),
-    Manager INTEGER REFERENCES personnel(id_personnel),
+    Manager INTEGER REFERENCES personnel(id_personnel) ON DELETE CASCADE,
     primary key(id_personnel)
 );
 
@@ -36,6 +36,8 @@ insert into personnel values(default,'Rakotoson','Mbola','Illustratice',9);
 insert into personnel values(default,'Randriamasy','Noely','Responsable de la relation public',10);
 
 
+
+--  ___________________________________________ty le requete hierarchique________________________________
 CREATE VIEW perso_hierarchie AS
 WITH RECURSIVE hierarchie(id_personnel, Nom,Prenom,Poste,Manager, niveau, chemin) AS (
   SELECT id_personnel, Nom,Prenom,Poste, Manager, 0 as niveau, ARRAY[id_personnel]
@@ -48,3 +50,11 @@ WITH RECURSIVE hierarchie(id_personnel, Nom,Prenom,Poste,Manager, niveau, chemin
 )
 SELECT id_personnel, Nom,Prenom,Poste, Manager, niveau,chemin
 FROM hierarchie;
+-- ________________________________________________________________________________________________________
+
+-- raha iselect anle hierarchie de  " select * from perso_hierarchie";
+-- raha iselect hierarchie par chef de select * from perso_hierarchie
+-- raha amafa hierarchie na branche de tonga de " delete from personnel where id_personnel = le personnel lohanle branche" de vita
+
+select * from perso_hierarchie;
+select * from perso_hierarchie;
