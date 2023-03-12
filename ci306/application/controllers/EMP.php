@@ -1,8 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Emp
-
+class Emp extends CI_Controller 
+{
     public function __construct()
     {
         parent::__construct();
@@ -13,11 +13,9 @@ class Emp
     {
         $this->load->model('Employee');
         $data['Objets']=$this->Employee->get_listemp();
-        $data['Content']='Page/organigramme';
-        $this->load->view('Page/ListeEmployee',$data);
+        $data['Content']='Page/ListeEmployee';
+        $this->load->view('Page/page',$data);
     }
-   
-
 } 
 
 

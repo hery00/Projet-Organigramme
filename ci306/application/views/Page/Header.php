@@ -5,5 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo base_url();?>Assets/CSS/stylepage.css">
-    <title>Brouillon</title>
+    <title>Page</title>
 </head>
+<body class="main">
+    <div class="header">
+        <div class="logo">
+            <img src="" alt="" class="sary">
+        </div>
+        <div class="menu">
+            <a href="" class="accueil">ACCUEIL</a>
+            <a href="" class="liste">LISTE DES EMPLOYER</a>
+            <a href="" class="activite">ACTIVITES</a>
+            <a href="" class="contacts">CONTACTS</a>
+        </div>
+    </div>
