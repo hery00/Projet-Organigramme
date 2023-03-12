@@ -18,16 +18,16 @@ class Form extends CI_Controller
         $intitule_poste=$this->input->post('intitule_poste');
         $poste_occup=$this->input->post('poste_occup');
         $sup_h=$this->input->post('sup_h');
-        $fonction=$this->fonction->post('fonction');
+        $fonction=$this->input->post('fonction');
         $exigences=$this->input->post('exigences');
         $moyen=$this->input->post('moyen');
 
 
-        if($this->input->post('intitule_poste') && $this->input->post('poste_occup')  && $this->input->post('sup_h') && $this->input->post('fonction') && $this->input->post('exigences') && $this->input->post('moyen')) 
+        if (!empty($intitule_poste) && !empty($poste_occup) && !empty($sup_h)) 
         {
             $this->load->model('Mform');
-            $this->Mform->rempli_form($nom,$email,$pass,$repass);
-            redirect('Page/Fiche');
+            $this->Mform->rempli_form($intitule_poste,$poste_occup,$sup_h,$fonction,$exigences,$moyen);
+            redirect('fiche/form_fiche');
         } 
         else 
         {
