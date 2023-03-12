@@ -13,7 +13,7 @@ class LOGIN extends CI_Controller
     {
         $email=$this->input->post('email');
         $mdp=$this->input->post('mdp');
-        $this ->load->model('User');
+        $this->load->model('User');
        
             $this->session->set_userdata('email',$email);
             $data['Content']='Page/Home';

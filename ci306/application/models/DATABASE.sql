@@ -35,9 +35,6 @@ insert into personnel values(default,'Randriambola','Ravaka','Graphic designer',
 insert into personnel values(default,'Rakotoson','Mbola','Illustratice',9);
 insert into personnel values(default,'Randriamasy','Noely','Responsable de la relation public',10);
 
-
-
---  ___________________________________________ty le requete hierarchique________________________________
 CREATE VIEW perso_hierarchie AS
 WITH RECURSIVE hierarchie(id_personnel, Nom,Prenom,Poste,Manager, niveau, chemin) AS (
   SELECT id_personnel, Nom,Prenom,Poste, Manager, 0 as niveau, ARRAY[id_personnel]
@@ -50,8 +47,15 @@ WITH RECURSIVE hierarchie(id_personnel, Nom,Prenom,Poste,Manager, niveau, chemin
 )
 SELECT id_personnel, Nom,Prenom,Poste, Manager, niveau,chemin
 FROM hierarchie;
--- ________________________________________________________________________________________________________
 
+create table user
+(
+    id_user serial no null,
+    Nom varchar(200),
+    Prenom varchar(50),
+    Email varchar(50),
+    Pwd varchar(20)
+);
 -- raha iselect anle hierarchie de  " select * from perso_hierarchie";
 -- raha iselect hierarchie par chef de select * from perso_hierarchie
 -- raha amafa hierarchie na branche de tonga de " delete from personnel where id_personnel = le personnel lohanle branche" de vita
