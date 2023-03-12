@@ -9,17 +9,19 @@ class LOGIN extends CI_Controller
         parent::__construct();
     }
 
-    public function login()
+    public function log()
     {
-        $nom=$this->input->post('nom');
-        $prenom=$this->input->post('prenom');
-        $poste=$this->input->post('poste');
-        $this ->load->model('Employee');
+        $email=$this->input->post('email');
+        $mdp=$this->input->post('mdp');
+        $this ->load->model('User');
        
-            $this->session->set_userdata('Nom',$nom);
+            $this->session->set_userdata('email',$email);
             $data['Content']='Page/Home';
             $this->load->view('Page/Index',$data);
-    
+            
+      
+       
+           
     }
        
 }
