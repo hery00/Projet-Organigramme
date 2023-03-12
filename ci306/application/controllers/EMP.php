@@ -1,7 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Emp
+class EMP extends CI_Controller 
+{
 
     public function __construct()
     {
