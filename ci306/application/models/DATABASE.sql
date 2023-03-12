@@ -56,3 +56,9 @@ create table user
     Email varchar(50),
     Pwd varchar(20)
 );
+-- raha iselect anle hierarchie de  " select * from perso_hierarchie";
+-- raha iselect hierarchie par chef de select * from perso_hierarchie
+-- raha amafa hierarchie na branche de tonga de " delete from personnel where id_personnel = le personnel lohanle branche" de vita
+
+select * from perso_hierarchie;
+select * from perso_hierarchie;
