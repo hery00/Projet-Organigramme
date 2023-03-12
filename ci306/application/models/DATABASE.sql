@@ -36,3 +36,15 @@ insert into personnel values(default,'Rakotoson','Mbola','Illustratice',9);
 insert into personnel values(default,'Randriamasy','Noely','Responsable de la relation public',10);
 
 
+CREATE VIEW perso_hierarchie AS
+WITH RECURSIVE hierarchie(id_personnel, Nom,Prenom,Poste,Manager, niveau, chemin) AS (
+  SELECT id_personnel, Nom,Prenom,Poste, Manager, 0 as niveau, ARRAY[id_personnel]
+  FROM personnel
+  WHERE Manager IS NULL
+  UNION ALL
+  SELECT o.id_personnel, o.Nom,o.Prenom,o.Poste, o.Manager, oa.niveau + 1 as niveau, oa.chemin || o.id_personnel
+  FROM personnel o
+  JOIN hierarchie oa ON o.Manager= oa.id_personnel
+)
+SELECT id_personnel, Nom,Prenom,Poste, Manager, niveau,chemin
+FROM hierarchie;
