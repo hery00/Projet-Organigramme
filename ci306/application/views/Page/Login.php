@@ -8,7 +8,7 @@
     <title>login</title>
 </head>
 <body class="main">
-    <form action="<?php echo base_url('LOGIN/log');?>" class="signin-form" method="post">
+    <form action="<?php echo base_url('LOGIN/login');?>" class="signin-form" method="post">
         <div class="container">
         
             <div class="loginbox">

@@ -23,14 +23,13 @@ class INSCRIT extends CI_Controller
         if($mdp==$confirm_mdp)
         {
             $this->load->model('User');
-            $this->User->inscri_user($nom,$prenom,$email,$mdp,$confirm_mdp);
-            redirect('log/index');
+            $this->User->inscri_user($nom,$prenom,$email,$mdp);
+            redirect('Log/index');
         }
         else
         {
             redirect('inscrit/form_inscri');
-        }
-        
+        }  
     }
 }
 
