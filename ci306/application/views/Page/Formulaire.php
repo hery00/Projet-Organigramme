@@ -12,16 +12,17 @@
         <div class="titre">
             <h1> Veuillez remplir le formulaire ci-dessous</h1>
         </div>
-        <div class="intitule">Intitulé de poste : <input type="text"> </div>
-        <div class="poste">Poste occupé par : <input type="text"> </div>
-        <div class="sup">Supérieur hiérarchique : <input type="text"> </div>
-        <div class="fonction">Fonction : <input type="text"> </div>
+        <div class="intitule">Intitulé de poste : <input type="text" name="intitule_poste"> </div>
+        <div class="poste">Poste occupé par : <input type="text" name="poste_occup"> </div>
+        <div class="sup"> Nom du Supérieur hiérarchique : <input type="text" name="sup_h_nom"> </div>
+        <div class="sup">Prenom du Supérieur hiérarchique : <input type="text" name="sup_h_prenom"> </div>
+        <div class="fonction">Fonction : <input type="text" name="fonction"> </div>
         <div class="intitule">Exigences requises :
-            <p>Niveau requis <input type="text"></p>
-            <p>Formations et qualifications nécessaires   <input type="text"></p>
-            <p>Compétences nécessaires (techniques, managériales, relationnelles) <input type="text"></p>
+            <p>Niveau requis <input type="text" name="niveau"></p>
+            <p>Formations et qualifications nécessaires<input type="text" name="formations"></p>
+            <p>Compétences nécessaires (techniques, managériales, relationnelles)<input type="text" name="competences"></p>
         </div>
-        <div class="moyen">Moyen(humains,matériels,financiers) : <input type="text"> </div>
+        <div class="moyen">Moyen(humains,matériels,financiers):<input type="text" name="moyen"> </div>
         <button class="btn">Confirmer</button>
     </div>
 </body>
