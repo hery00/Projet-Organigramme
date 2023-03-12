@@ -63,3 +63,14 @@ create table users
 
 select * from perso_hierarchie;
 select * from perso_hierarchie;
+
+create table fichedeposte
+(
+    id_personnel int,
+    intitule_poste varchar(50),
+    poste_occup varchar(50),
+    sup_h varchar(50),
+    fonction varchar(50),
+    exigences varchar(200),
+    foreign key (id_personnel) references personnel(id_personnel)
+);
