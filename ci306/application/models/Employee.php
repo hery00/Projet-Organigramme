@@ -1,7 +1,7 @@
 <?php 
     if(! defined('BASEPATH')) exit('No direct script acces allowed');
 
-     class Employee extends CI_Model 
+     class employee extends CI_Model 
     {
         public function __construct()
         {
@@ -25,7 +25,6 @@
             $requete = "select * from personnel";
             $query = $this->db->query($requete);
             $rs = array();
-
             foreach($query->result_array() as $row)
             {
                 $rs[]=$row;

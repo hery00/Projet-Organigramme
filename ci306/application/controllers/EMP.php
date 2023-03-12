@@ -1,8 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class EMP extends CI_Controller 
-{
+class Emp
 
     public function __construct()
     {
@@ -14,8 +13,8 @@ class EMP extends CI_Controller
     {
         $this->load->model('Employee');
         $data['Objets']=$this->Employee->get_listemp();
-        $data['Content']='Page/Home';
-        $this->load->view('Page/Index',$data);
+        $data['Content']='Page/organigramme';
+        $this->load->view('Page/ListeEmployee',$data);
     }
    
 
