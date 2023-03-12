@@ -6,7 +6,7 @@ create table personnel
     Nom varchar(200),
     Prenom varchar(100),
     Poste varchar(100),
-    Manager INTEGER REFERENCES personnel(id_personnel),
+    Manager INTEGER REFERENCES personnel(id_personnel) ON DELETE CASCADE,
     primary key(id_personnel)
 );
 
