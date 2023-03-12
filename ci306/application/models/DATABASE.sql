@@ -48,9 +48,9 @@ WITH RECURSIVE hierarchie(id_personnel, Nom,Prenom,Poste,Manager, niveau, chemin
 SELECT id_personnel, Nom,Prenom,Poste, Manager, niveau,chemin
 FROM hierarchie;
 
-create table user
+create table users
 (
-    id_user serial no null,
+    id_user serial not null,
     Nom varchar(200),
     Prenom varchar(50),
     Email varchar(50),
