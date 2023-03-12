@@ -39,4 +39,16 @@
             }
             return false;
         }
+
+        public function get_hierarcie_by_manager($Manager)
+        {
+            $requete="select * from perso_hierarchie where id_personnel="+$manager+"union select* from perso_hierarchie where Manager="+$Manager;
+            $query = $this->db->query($requete);
+            $rs = array();
+            foreach($query->result_array() as $row)
+            {
+                $rs[]=$row;
+            }
+            return $rs;
+        }
     }
