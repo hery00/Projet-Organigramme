@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="<?php echo base_url();?>Assets/CSS/stylepage.css">
     <title>Brouillon</title>
 </head>
-<body>
+<body class="main">
 
     <div class="header">
         <div class="logo">
