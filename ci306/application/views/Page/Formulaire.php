@@ -16,11 +16,8 @@
         <div class="poste">Poste occupé par : <input type="text"> </div>
         <div class="sup">Supérieur hiérarchique : <input type="text"> </div>
         <div class="fonction">Fonction : <input type="text"> </div>
-        <div class="intitule">Exigences requises :
-            <p>Niveau requis <input type="text"></p>
-            <p>Formations et qualifications nécessaires   <input type="text"></p>
-            <p>Compétences nécessaires (techniques, managériales, relationnelles) <input type="text"></p>
-        </div>
+        <div class="intitule">Exigences requises : </div>
+        <textarea name="message" rows="5" cols="50"></textarea>
         <div class="moyen">Moyen(humains,matériels,financiers) : <input type="text"> </div>
         <button class="btn">Confirmer</button>
     </div>
