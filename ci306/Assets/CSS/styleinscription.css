@@ -1,15 +1,16 @@
 #main_inscri
 {
-    background-color: #E5EFF2;
+    background-color: #081f62;
     font-family:"Arial";
 }
 .container
 {
-    background-color: white;
+    background-color: #e7e9f0;
     display: flex;
     width: 900px;
     height:550px;
     margin: auto;
+    margin-top: 25px;
     border-radius: 10px;
     box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.04);
 }
@@ -100,7 +101,7 @@ svg
 }
 .titre
 {
-    color: #206DF7;
+    color: #151747;
     font-size: 24pt;
     font-weight: bold;
     align-self: center;
@@ -208,7 +209,7 @@ svg
 }
 .titre
 {
-    color: #206DF7;
+    color: #151747;
     font-size: 24pt;
     font-weight: bold;
     align-self: center;
