@@ -64,10 +64,14 @@ select * from perso_hierarchie;
 create table fichedeposte
 (
     id_personnel int,
-    intitule_poste varchar(50),
-    poste_occup varchar(50),
-    sup_h varchar(50),
-    fonction varchar(50),
-    exigences varchar(200),
+    intitule_poste varchar(250),
+    poste_occup varchar(250),
+    sup_h_nom varchar(250),
+    sup_h_prenom varchar(250),
+    fonction varchar(250),
+    Niveau varchar(200),
+    Formationse_et_qualifications varchar(200),
+    Compétences varchar(200),
+    Moyen varchar(200),
     foreign key (id_personnel) references personnel(id_personnel)
 );

@@ -17,8 +17,8 @@ class INSCRIT extends CI_Controller
         $nom=$this->input->post('nom');
         $prenom=$this->input->post('prenom');
         $email=$this->input->post('email');
-        $mdp=$this->input->post('mdp');
-        $confirm_mdp=$this->input->post('confirm_mdp');
+        $mdp=$this->input->post('pass');
+        $confirm_mdp=$this->input->post('repass');
         
         if($mdp==$confirm_mdp)
         {
