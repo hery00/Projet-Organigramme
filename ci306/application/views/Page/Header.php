@@ -13,9 +13,10 @@
             <img src="" alt="" class="sary">
         </div>
         <div class="menu">
-            <a href="" class="accueil">ACCUEIL</a>
-            <a href="" class="liste">LISTE DES EMPLOYER</a>
-            <a href="" class="activite">ACTIVITES</a>
-            <a href="" class="contacts">CONTACTS</a>
+            <a href="" class="submenu">Accueil</a>
+            <a href="" class="submenu">Listes des personnels</a>
+            <a href="" class="submenu">Activités</a>
+            <a href="<?php echo base_url('Hierarchy/Loadhierarchie');?>" class="submenu">Organigramme</a>
+            <a href="" class="submenu">Contacts</a>
         </div>
     </div>
