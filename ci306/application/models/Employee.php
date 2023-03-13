@@ -40,9 +40,21 @@
             return false;
         }
 
-        public function get_hierarcie_by_manager($Manager)
+        public function get_hierarcie_PDG()
         {
-            $requete="select * from perso_hierarchie where id_personnel="+$manager+"union select* from perso_hierarchie where Manager="+$Manager;
+            $requete="select * from perso_hierarchie where id_personnel=1 union select* from perso_hierarchie where Manager=1";
+            $query = $this->db->query($requete);
+            $rs = array();
+            foreach($query->result_array() as $row)
+            {
+                $rs[]=$row;
+            }
+            return $rs;
+        }
+
+        public function get_hierarcie_by_manager($id_perso)
+        {
+            $requete="select * from perso_hierarchie where id_personnel="+$id_perso+"union select* from perso_hierarchie where Manager="+$id_perso;
             $query = $this->db->query($requete);
             $rs = array();
             foreach($query->result_array() as $row)

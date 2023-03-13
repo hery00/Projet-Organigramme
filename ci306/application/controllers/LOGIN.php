@@ -45,18 +45,13 @@ class LOGIN extends CI_Controller
         $mdp=$this->input->post('pass');
         $this->load->model('User');
         $checker=$this->User->check_Login($email,$mdp);
-        if($checker==true)
+        if($checker===false)
         {
+            redirect('Log/index');  
             // $this->session->set_userdata('email',$email);
-            $data['Content']='Page/ListeEmployee';
-           redirect('Emp/get_Emp');
         }
-        else
-        {
-            redirect('Log/index');
-        }
-        
-        $this->Log->index();       
+        $data['Content']='Page/ListeEmployee';
+        redirect('Emp/get_Emp');     
                   
     }
        

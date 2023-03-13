@@ -7,3 +7,6 @@
             <p>034 XX XXX XX</p>
         </div>
     </footer>
+
+</body>
+</html>
