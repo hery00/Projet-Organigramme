@@ -8,7 +8,7 @@
     <title>Inscription</title>
 </head>
 <body id="main_inscri">
-<form action="<?php echo base_url('INSCRIT/Trait_inscrit');?>" method="POST" id="signup-form" class="signup-form">
+<form action="<?php echo base_url('INSCRIT/Traitinscrit');?>" method="POST" id="signup-form" class="signup-form">
     <div class="container">
         <div class="inscribox">
             <p class="titre">Inscription</p>
