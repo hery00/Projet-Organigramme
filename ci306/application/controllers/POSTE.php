@@ -21,34 +21,34 @@ class POSTE extends CI_Controller
     }
     public function insert_grille()
     {
-        $intitule=$this->input->post('intitule');
-        $date=$this->input->post('date');
-        $activite_quotidienne=$this->input->post('activite_quotidienne');
-        $activite_hebdomadaire=$this->input->post('activite_hebdomadaire');
-        $activite_mensuelle=$this->input->post('activite_mensuelle');
-        $activite_annuelle=$this->input->post('activite_annuelle');
-        $autre_mission=$this->input->post('autre_mission');
-        $superieur_hierarchique=$this->input->post('superieur_hierarchique');
-        $encadrement=$this->input->post('encadrement');
-        $nbencadrement=$this->input->post('nbencadrement');
+        $data['intitule']=$this->input->post('intitule');
+        $data['date']=$this->input->post('date');
+        $data['activite_quotidienne']=$this->input->post('activite_quotidienne');
+        $data['activite_hebdomadaire']=$this->input->post('activite_hebdomadaire');
+        $data['activite_mensuelle']=$this->input->post('activite_mensuelle');
+        $data['activite_annuelle']=$this->input->post('activite_annuelle');
+        $data['autre_mission']=$this->input->post('autre_mission');
+        $data['superieur_hierarchique']=$this->input->post('superieur_hierarchique');
+        $data['encadrement']=$this->input->post('encadrement');
+        $data['nbencadrement']=$this->input->post('nbencadrement');
         $categorie=$this->input->post('categorie');
-        $contacts_interieur=$this->input->post('contacts_interieur');
-        $contact_exterieur=$this->input->post('contact_exterieur');
-        $formations_qualifications=$this->input->post('formations_qualifications');
-        $qualite_perso=$this->input->post('qualite_perso');
-        $duree=$this->input->post('duree');
-        $moyen=$this->input->post('moyen');
-        $contraintes=$this->input->post('contraintes');
-        $description_journee=$this->input->post('description_journee');
-
+        $data['contacts_interieur']=$this->input->post('contacts_interieur');
+        $data['contact_exterieur']=$this->input->post('contact_exterieur');
+        $data['formations_qualifications']=$this->input->post('formations_qualifications');
+        $data['qualite_perso']=$this->input->post('qualite_perso');
+        $data['duree']=$this->input->post('duree');
+        $data['moyen']=$this->input->post('moyen');
+        $data['contraintes']=$this->input->post('contraintes');
+        $data['description_journee']=$this->input->post('description_journee');
+        $data['Content']='Page/Fiche_poste';
         $this->load->model('Mgrille');
-        $this->Mgrille->insert_grille($intitule,$date,$activite_quotidienne,$activite_hebdomadaire,$activite_mensuelle,$activite_annuelle,$autre_mission,$superieur_hierarchique,$encadrement,$nbencadrement,$categorie,$contacts_interieur,$contact_exterieur,$formations_qualifications,$qualite_perso,$duree,$moyen,$contraintes,$description_journee);
-       redirect('POSTE/create_fiche');
+        $this->Mgrille->insert_grille($data['intitule'],$data['date'],$data['activite_quotidienne'],$data['activite_hebdomadaire'],$data['activite_mensuelle'],$data['activite_annuelle'],$data['autre_mission'],$data['superieur_hierarchique'],$data['encadrement,$nbencadrement'],$data['categorie'],$data['contacts_interieur'],$data['contact_exterieur'],$data['formations_qualifications'],$data['qualite_perso'],$data['duree'],$data['moyen'],$data['contraintes'],$data['description_journee']);
+        $this->load->view('Page/page',$data);
     }    
 
     public function create_fiche()
     {
-        
+
     }
     
 }
