@@ -23,6 +23,5 @@
             <td>Description</td>
         </tr>
         <?php } ?>
-        
     </table>
 </div>

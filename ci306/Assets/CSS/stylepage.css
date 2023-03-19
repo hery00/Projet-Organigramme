@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .main
 
 {
@@ -17,6 +21,9 @@
     background-color: #151747;
     /* margin-top: -150px; */
     /* margin-bottom: 50px; */
+    top: 0;
+    left: 0;
+
 
 }
 
@@ -116,6 +123,7 @@ a{
 .liste
 {
     /* margin: 0 auto; */
+    align-self: center;
     margin-top: 150px;
     margin-bottom: 50px;
 }
