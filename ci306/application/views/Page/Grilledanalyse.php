@@ -34,7 +34,7 @@
                     <textarea name="message" rows="10" cols="90" name="autre_mission"></textarea>
                 
                 <h2>POSITIONNEMENT HIERARCHIQUE</h2>
-                    <div class="p1"><p?>1. Qui est le supérieur hiérarchique direct de l’agent ? </p><textarea name="message" rows="1" cols="20" name="seperieur_hierarchique"></textarea></div>
+                    <div class="p1"><p?>1. Qui est le supérieur hiérarchique direct de l’agent ? </p><textarea rows="1" cols="20" name="superieur_hierarchique"></textarea></div>
                     <div class="p2"><p>2. Encadre-t-il- des agents au cours de vos activités ?(Oui/Non)</p><input type="text" id="" name="encadrement"></div>
                     <div class="p3">3. Si oui, indiquez le nombre d’agents encadrés : <input type="number" id="" name="nbencadrement"></div>
                     <div class="p4"><p>4. A quelle catégorie hiérarchique appartiennent-ils ?(A/B/C)</p><input type="text" name="categorie" id=""></div>
@@ -42,25 +42,25 @@
                 <h2>RELATIONS FONCTIONNELLES</h2>
                     <div class="r1">1. Au cours des activités, avec qui l’agent est en contact au sein de l’établissement ?
                     Personne et fonction </div>
-                    <textarea name="message" rows="10" cols="90" name="contacts_interieur"></textarea> 
+                    <textarea rows="10" cols="90" name="contacts_interieur"></textarea> 
                     <div class="r2">2. Au cours de ses activités, quelles sont les personnes extérieures à l’établissement avec qui l’agent est en contact ?
                     Personne et fonction </div>
-                    <textarea name="message" rows="10" cols="90" name="contact_exterieur"></textarea> 
+                    <textarea rows="10" cols="90" name="contact_exterieur"></textarea> 
 
                 <h2>EXIGENCES DU POSTE</h2> 
                     <div class="e1">1. Quelles formations et qualifications professionnelles vous semblent requises pour occuper ce
                     poste ?</div>
-                    <textarea name="message" rows="10" cols="90" name="formations_qualifications"></textarea> 
+                    <textarea rows="10" cols="90" name="formations_qualifications"></textarea> 
                     <div class="e2">2. Selon vous, quelles sont les qualités personnelles nécessaires pour occuper ce poste  ?
                     </div>
-                    <textarea name="message" rows="10" cols="90" name="qualite_perso"></textarea> 
+                    <textarea rows="10" cols="90" name="qualite_perso"></textarea> 
                     <div class="e3">3. A votre avis, quelle est la durée moyenne pour maîtriser ce poste ? </div>
-                    <textarea name="message" rows="10" cols="90" name="duree"></textarea> 
+                    <textarea rows="10" cols="90" name="duree"></textarea> 
 
                 <h2>MOYENS DU POSTE</h2> 
                     <div class="m">Quels sont les moyens matériels dont dispose l’agent pour remplir ses fonctions (outils, logiciels,
                     fournitures...) ?</div>
-                    <textarea rows="10" cols="90" name="message"></textarea> 
+                    <textarea rows="10" cols="90" name="moyen"></textarea> 
                 
                 <h2>CONDITIONS PARTICULIERES ET CONTRAINTES D’EXERCICE DU POSTE</h2>
                     <div class="c">Quelles sont les contraintes (physiques, de temps, d’espace, port EPI etc.) que l’agent rencontre dans
