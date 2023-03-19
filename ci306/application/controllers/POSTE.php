@@ -11,13 +11,10 @@ class POSTE extends CI_Controller
     public function load_grille()
     {
         $this->load->view('Page/Grilledanalyse');
-<<<<<<< Updated upstream
-=======
     }
     public function load_fiche()
     {
         $this->load->view('Page/Fiche_poste');
->>>>>>> Stashed changes
     }
     public function get_form_grille()
     {
