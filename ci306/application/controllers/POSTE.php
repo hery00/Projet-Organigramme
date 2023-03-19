@@ -19,32 +19,14 @@ class POSTE extends CI_Controller
 
         $this->load->view('Page/page',$data);
     }
-    public function get_form_grille()
+    public function get_grille()
     {
-        
-        $intitule_poste=$this->input->post('intitule_poste');
-        $poste_occup=$this->input->post('poste_occup');
-        $sup_h_nom=$this->input->post('sup_h_nom');
-        $sup_h_prenom=$this->input->post('sup_h_prenom');
-        $fonction=$this->input->post('fonction');
-        $niveau=$this->input->post('niveau');
-        $formations=$this->input->post('formations');
-        $competences=$this->input->post('competences');
-        $moyen=$this->input->post('moyen');
-
-
-        if (!empty($intitule_poste) && !empty($poste_occup) && !empty($sup_h))
-        {
-            $this->load->model('Mform');
-            $this->Mform->rempli_form($intitule_poste,$poste_occup,$sup_h,$fonction,$niveau,$formations,$competences,$moyen);
-            redirect('fiche/form_fiche');
-        } 
-        else 
-        {
-            redirect('form/form_poste');
-        }
-        
-    }
+        $this->load->model('Mgrille');
+        $data['Objets']=$this->Mgrille->insert_grille();
+        $data['Content']='Page/Grilledanalyse';
+        $this->load->view('Page/page',$data);
+    }    
+    
 }
 
 ?>
