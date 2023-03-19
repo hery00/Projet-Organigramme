@@ -7,14 +7,19 @@
         {
             parent::__construct();
         }
-        public function insert_grille($intitule_poste, $activites_quotidiens,
+        public function insert_grille($intitule_poste,$daty,$activites_quotidiens,
          $activites_semaines, $activites_mois, $activites_an,
           $activites_missions, $position_suphierarchique, $position_encadrement,
           $position_nbencadres, $position_categories, $relation_agent, $relation_exterieur,
           $exigence_professionnelles, $exigence_perso, $exigence_maitrise, $moyen, $condition, $descri)
         {
-            $requete = "INSERT INTO grille VALUES (DEFAULT, %s, NOW(), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s) ";
-            $requete = sprintf($requete, $this->db->escape($intitule_poste),
+            
+            $requete = "INSERT INTO grille VALUES (DEFAULT, %s,%s, %s, %s, %s, %s, %s,
+            %s, %s, %s, %s, %s, %s, %s,
+            %s, %s, %s, %s, %s) ";
+            $requete = sprintf($requete,
+            $this->db->escape($intitule_poste),
+            $this->db->escape($daty),
             $this->db->escape($activites_quotidiens),
             $this->db->escape($activites_semaines),
             $this->db->escape($activites_mois),
