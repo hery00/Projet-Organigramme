@@ -34,9 +34,9 @@
         
         <h2>POSITIONNEMENT HIERARCHIQUE</h2>
             <div class="p1">1. Qui est le supérieur hiérarchique direct de l’agent ? <textarea name="message" rows="1" cols="20"></textarea></div>
-            <div class="p2">2. Encadre-t-il- des agents au cours de vos activités ? Oui<input type="checkbox"> Non<input type="checkbox"></div>
+            <div class="p2">2. Encadre-t-il- des agents au cours de vos activités ?<input type="checkbox"> Non<input type="checkbox"></div>
             <div class="p3">3. Si oui, indiquez le nombre d’agents encadrés : <textarea name="message" rows="1" cols="20"></textarea></div>
-            <div class="p1">4. A quelle catégorie hiérarchique appartiennent-ils ? A<input type="checkbox"> B<input type="checkbox"> C<input type="checkbox"></div>
+            <div class="p1">4. A quelle catégorie hiérarchique appartiennent-ils ?<input type="checkbox"> B<input type="checkbox"> C<input type="checkbox"></div>
 
         <h2>RELATIONS FONCTIONNELLES</h2>
             <div class="r1">1. Au cours des activités, avec qui l’agent est en contact au sein de l’établissement ?
