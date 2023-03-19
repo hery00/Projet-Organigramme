@@ -10,11 +10,14 @@ class POSTE extends CI_Controller
     }
     public function load_grille()
     {
-        $this->load->view('Page/Grilledanalyse');
+        $data['Content']='Page/Grilledanalyse';
+        $this->load->view('Page/page',$data);
     }
     public function load_fiche()
     {
-        $this->load->view('Page/Fiche_poste');
+        $data['Content']='Page/Fiche_poste';
+
+        $this->load->view('Page/page',$data);
     }
     public function get_grille()
     {
