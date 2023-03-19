@@ -9,7 +9,7 @@
 </head>
 <body class="main">
     <div class="container">
-<form action="<?php echo base_url('form/form_fiche');?>" method="POST" >
+<form action="<?php echo base_url('poste/load_fiche');?>" method="POST" >
 <h1>Fiche de poste</h1>
         <table id="tableau">
             <tr class="" >
@@ -119,22 +119,8 @@ poste
                 </td>
                
             </tr>
-            <tr class="">
-                <td>
-                Savoirs 
-                </td>
-                <td>
-                A compléter
-                </td>
-            </tr>
-            <tr class="">
-                <td>
-                Savoirs 
-                </td>
-                <td>
-                A compléter
-                </td>
-            </tr>
+          
+            
             <tr class="">
                 <td>
                 Savoirs 
