@@ -77,7 +77,8 @@ create table fichedeposte
 );
 
 create table grille
-(
+(   
+    id_grille int,
     intitule_poste varchar(250),
     daty date,
     activites1 varchar(350),
