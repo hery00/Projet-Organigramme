@@ -96,6 +96,6 @@ create table grille
     exigence2 varchar(350),
     exigence3 varchar(350),
     moyen varchar(350),
-    condition varchar(350)
-
+    condition varchar(350),
+    descri varchar(450)
 );
