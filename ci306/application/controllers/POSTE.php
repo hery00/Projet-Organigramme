@@ -2,13 +2,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Form extends CI_Controller 
+class POSTE extends CI_Controller 
 {
     public function __construct()
     {
         parent::__construct();
     }
-    public function form_poste()
+    public function load_grille()
     {
         $this->load->view('Page/Formulaire');
     }
