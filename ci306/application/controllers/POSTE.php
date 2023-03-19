@@ -12,7 +12,7 @@ class POSTE extends CI_Controller
     {
         $this->load->view('Page/Formulaire');
     }
-    public function get_form()
+    public function get_form_grille()
     {
         
         $intitule_poste=$this->input->post('intitule_poste');

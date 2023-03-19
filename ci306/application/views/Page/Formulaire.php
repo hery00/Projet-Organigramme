@@ -7,7 +7,7 @@
     <title>Formulaire</title>
 </head>
 <body class="main">
-<form action="<?php echo base_url('Form/get_form');?>" method="POST")
+<form action="<?php echo base_url('poste/load_grille');?>" method="POST")
     <div class="container">
         <div class="titre">
             <h1> Veuillez remplir la grille ci-dessous</h1>
