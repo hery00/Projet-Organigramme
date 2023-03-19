@@ -52,7 +52,7 @@
             return $rs;
         }
 
-        public function get_hierarcie_by_manager($id_perso)
+        public function get_hierarchie_by_manager($id_perso)
         {
             $requete="select * from perso_hierarchie where id_personnel="+$id_perso+"union select* from perso_hierarchie where Manager="+$id_perso;
             $query = $this->db->query($requete);
