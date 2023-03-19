@@ -10,7 +10,7 @@ class POSTE extends CI_Controller
     }
     public function load_grille()
     {
-        $this->load->view('Page/Formulaire');
+        $this->load->view('Page/Grilledanalyse');
     }
     public function get_form_grille()
     {
