@@ -75,3 +75,26 @@ create table fichedeposte
     Moyen varchar(200),
     foreign key (id_personnel) references personnel(id_personnel)
 );
+
+create table grille
+(
+    intitule_poste varchar(250),
+    daty date,
+    activites1 varchar(350),
+    activites2 varchar(350),
+    activites3 varchar(350),
+    activites4 varchar(350),
+    activites5 varchar(350),
+    position1 varchar(250),
+    position2 varchar(250),
+    position3 varchar(250),
+    position4 varchar(350),
+    relation1 varchar(350),
+    relation2 varchar(350),
+    exigence1 varchar(350),
+    exigence2 varchar(350),
+    exigence3 varchar(350),
+    moyen varchar(350),
+    condition varchar(350)
+
+);
