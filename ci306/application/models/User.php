@@ -34,19 +34,15 @@
             
       
         
-        public function inscri_user($nom,$prenom,$email,$mdp)
-        {
-            $requete = "insert into users values(default,%s,%s,%s,%s)";
-            $requete = sprintf($requete,$this->db->escape($nom),$this->db->escape($prenom),$this->db->escape($email),$this->db->escape($mdp));
-            $this->db->escape($requete);
+        public function inscri_user($nom, $prenom, $email, $mdp) {
+            $requete = "INSERT INTO users VALUES (DEFAULT, %s, %s, %s, %s)";
+            $requete = sprintf($requete, $this->db->escape($nom), $this->db->escape($prenom), $this->db->escape($email), $this->db->escape($mdp));
             $line = $this->db->query($requete);
             $conf = true;
-            if($line==0)
-            {
+            if ($line == 0) {
                 $conf = false;
             }
             return $conf;
         }
-    }  
-
+    }        
 ?>  
