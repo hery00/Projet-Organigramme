@@ -8,7 +8,7 @@
     <title>Page</title>
 </head>
 <body class="main">
-    <div class="header">
+    <header class="header">
         <div class="logo">
             <img src="" alt="" class="sary">
         </div>
@@ -19,4 +19,4 @@
             <a href="<?php echo base_url('Hierarchy/Loadhierarchie');?>" class="submenu">Organigramme</a>
             <a href="" class="submenu">Contacts</a>
         </div>
-    </div>
+    </header>

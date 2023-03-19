@@ -50,7 +50,6 @@ class LOGIN extends CI_Controller
             redirect('Log/index');  
             // $this->session->set_userdata('email',$email);
         }
-        $data['Content']='Page/ListeEmployee';
         redirect('Emp/get_Emp');     
                   
     }
