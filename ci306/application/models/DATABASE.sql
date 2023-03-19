@@ -78,7 +78,7 @@ create table fichedeposte
 
 create table grille
 (   
-    id_grille int,
+    id_grille serial not null,
     intitule_poste varchar(250),
     daty date,
     activites_quotidiens text,
@@ -88,7 +88,7 @@ create table grille
     activites_missions text,
     position_sup_hierarchique text,
     position_encadrement varchar(3),
-    position_nb_encadres number,
+    position_nb_encadres int,
     position_categories_hierarchique char,
     relation_agent text,
     relation_exterieur text,
@@ -100,3 +100,9 @@ create table grille
     descri text,
     primary key(id_grille)
 );
+
+insert into grille values(default,'gestionnaire de paie','2023-02-02',
+'activites_quotidiens','activites_semaines','activites_mois','activites_an',
+'activites_missions','position_sup_hierarchique','oui',7,'A',
+'relation_agent','relation_exterieur','exigence_professionnelles','exigence_perso',
+'exigence_maitrise','moyen','condition','descri');
