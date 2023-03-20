@@ -9,6 +9,7 @@ class LOGIN extends CI_Controller
         parent::__construct();
     }
 
+<<<<<<< Updated upstream
 
     // public function login()
     // {
@@ -52,6 +53,22 @@ class LOGIN extends CI_Controller
         }
         redirect('Emp/get_Emp');     
                   
+=======
+    public function login()
+    {
+        $email=$this->input->post('email');
+        $pass=$this->input->post('mdp');
+        $this ->load->model('MUser');
+       
+            $this->session->set_userdata('email',$email);
+            $data['Content']='Page/Home';
+            $data['Objets']=$this->MObjet->get_listobjet();
+            $this->load->view('Page/Index',$data);
+            
+      
+       
+           
+>>>>>>> Stashed changes
     }
        
 }

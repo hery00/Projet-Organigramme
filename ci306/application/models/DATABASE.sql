@@ -32,6 +32,7 @@ insert into personnel values(default,'Randriambola','Ravaka','Graphic designer',
 insert into personnel values(default,'Rakotoson','Mbola','Illustratice',5);
 insert into personnel values(default,'Randriamasy','Noely','Responsable de la relation public',6);
 
+<<<<<<< Updated upstream
 CREATE VIEW perso_hierarchie AS
 WITH RECURSIVE hierarchie(id_personnel, Nom,Prenom,Poste,Manager, niveau, chemin) AS (
   SELECT id_personnel, Nom,Prenom,Poste, Manager, 0 as niveau, ARRAY[id_personnel]
@@ -106,3 +107,15 @@ insert into grille values(default,'gestionnaire de paie','2023-02-02',
 'activites_missions','position_sup_hierarchique','oui',7,'A',
 'relation_agent','relation_exterieur','exigence_professionnelles','exigence_perso',
 'exigence_maitrise','moyen','condition','descri');
+=======
+create table user
+(
+    id_user serial no null,
+    Nom varchar(200),
+    Prenom varchar(50),
+    Email varchar(50),
+    Pwd varchar(20)
+);
+
+insert into user values(default,'Andria','Mbola','Andriambola@gmail.com','andria123');
+>>>>>>> Stashed changes

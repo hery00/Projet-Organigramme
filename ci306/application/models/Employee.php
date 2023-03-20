@@ -20,6 +20,7 @@
             return $rs;
         }
 
+<<<<<<< Updated upstream
         public function check_Login($nom,$prenom)
         {
             $requete = "select * from personnel";
@@ -63,4 +64,6 @@
             }
             return $rs;
         }
+=======
+>>>>>>> Stashed changes
     }

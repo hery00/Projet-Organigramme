@@ -8,6 +8,7 @@ class INSCRIT extends CI_Controller
     {
         parent::__construct();
     }
+<<<<<<< Updated upstream
     public function form_inscri()
     {
         $this->load->view('Page/Inscription');
@@ -30,6 +31,24 @@ class INSCRIT extends CI_Controller
         {
             redirect('inscrit/form_inscri');
         }  
+=======
+    public function Trait_inscrit()
+    {
+        $nom=$this->input->post('nom');
+        $email=$this->input->post('prenom');
+        
+        if($pass==$repass)
+        {
+            $this->load->model('MUser');
+            $this->MUser->inscri_user($nom,$email,$pass,$repass);
+            redirect('log/index');
+        }
+        else
+        {
+            redirect('inscrit/forminscrit');
+        }
+        
+>>>>>>> Stashed changes
     }
 }
 
