@@ -31,7 +31,7 @@ class POSTE extends CI_Controller
         $data['superieur_hierarchique']=$this->input->post('superieur_hierarchique');
         $data['encadrement']=$this->input->post('encadrement');
         $data['nbencadrement']=$this->input->post('nbencadrement');
-        $categorie=$this->input->post('categorie');
+        $data['categorie']=$this->input->post('categorie');
         $data['contacts_interieur']=$this->input->post('contacts_interieur');
         $data['contact_exterieur']=$this->input->post('contact_exterieur');
         $data['formations_qualifications']=$this->input->post('formations_qualifications');
