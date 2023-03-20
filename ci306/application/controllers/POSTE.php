@@ -42,7 +42,7 @@ class POSTE extends CI_Controller
         $data['description_journee']=$this->input->post('description_journee');
         $data['Content']='Page/Fiche_poste';
         $this->load->model('Mgrille');
-        $this->Mgrille->insert_grille($data['intitule'],$data['date'],$data['activite_quotidienne'],$data['activite_hebdomadaire'],$data['activite_mensuelle'],$data['activite_annuelle'],$data['autre_mission'],$data['superieur_hierarchique'],$data['encadrement,$nbencadrement'],$data['categorie'],$data['contacts_interieur'],$data['contact_exterieur'],$data['formations_qualifications'],$data['qualite_perso'],$data['duree'],$data['moyen'],$data['contraintes'],$data['description_journee']);
+        $this->Mgrille->insert_grille($data['intitule'],$data['date'],$data['activite_quotidienne'],$data['activite_hebdomadaire'],$data['activite_mensuelle'],$data['activite_annuelle'],$data['autre_mission'],$data['superieur_hierarchique'],$data['encadrement,nbencadrement'],$data['categorie'],$data['contacts_interieur'],$data['contact_exterieur'],$data['formations_qualifications'],$data['qualite_perso'],$data['duree'],$data['moyen'],$data['contraintes'],$data['description_journee']);
         $this->load->view('Page/page',$data);
     }    
 
