@@ -19,19 +19,19 @@
                 <h2>ACTIVITES ET TACHES DU POSTE</h2>
                     <div class="1">1. Quelles sont les activités effectuées par votre agent quotidiennement ?
                     (avec estimation de leur durée)</div>
-                    <textarea name="message" rows="10" cols="90" name="activite_quotidienne"></textarea> 
+                    <textarea rows="10" cols="90" name="activite_quotidienne"></textarea> 
                     <div class="2">2. Quelles sont les activités effectuées par votre agent une ou plusieurs fois par semaine ?
                     (avec estimation de leur durée)</div>
-                    <textarea name="message" rows="10" cols="90" name="activite_hebdomadaire"></textarea>
+                    <textarea rows="10" cols="90" name="activite_hebdomadaire"></textarea>
                     <div class="3">3. Quelles sont les activités effectuées par votre agent une ou plusieurs fois par mois ?
                     (avec estimation de leur durée)</div>
-                    <textarea name="message" rows="10" cols="90" name="activite_mensuelle"></textarea>
+                    <textarea rows="10" cols="90" name="activite_mensuelle"></textarea>
                     <div class="4">4. Quelles sont les activités effectuées par votre agent une ou plusieurs fois par an ?
                     (avec estimation de leur durée)</div>
-                    <textarea name="message" rows="10" cols="90" name="activite_annuelle"></textarea>
+                    <textarea rows="10" cols="90" name="activite_annuelle"></textarea>
                     <div class="5">5. Votre agent a-t’il d’autres missions au sein de la collectivité (ACMO...) ?
                     (combien de temps consacre t-il?)</div>
-                    <textarea name="message" rows="10" cols="90" name="autre_mission"></textarea>
+                    <textarea rows="10" cols="90" name="autre_mission"></textarea>
                 
                 <h2>POSITIONNEMENT HIERARCHIQUE</h2>
                     <div class="p1"><p?>1. Qui est le supérieur hiérarchique direct de l’agent ? </p><textarea rows="1" cols="20" name="superieur_hierarchique"></textarea></div>

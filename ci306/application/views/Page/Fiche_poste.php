@@ -23,35 +23,35 @@
             </tr>
             <tr class="">
                 <td>
-                <strong><center>Fonction</center></strong>
-                <p>Le nom de la fonction</p>
-
+                <strong><center>Intitulé de poste</center></strong>
+                <!-- <p>.?php echo $intitule?></p> -->
                 </td>
             </tr>
+            
             <tr class="">
-                <td rowspan="2">
-                <center> AFFECTATION</center>
-                <p>Service:</p>
-                <p>Durée hebdomadaire de travail :</p>
+                <td colspan="2">
+                activite quotidienne
                 </td>
-                <td>
-                Filière/catégorie/grade
-                Filière :
-                Catégorie :
-                Cadre d'emploi :
-                </td>
-            </tr>
-            <tr class="">
-                <td>
-                Supérieur hiérarchique direct
-                </td>
+                 
             </tr>
             <tr class="">
                 <td colspan="2">
-                AUTONOMIE ET RESPONSABILITES
+                <!-- <?php echo $activite_quotidienne?> -->
                 </td>
-               
-                
+                 
+            </tr>
+            <tr class="">
+                <td colspan="2">
+                Activités hebdomadaire
+                </td>
+                 
+            </tr>
+            <tr class="">
+                <td colspan="2">
+                <!-- <?php echo $activite_hebdomadaire?> -->
+
+                </td>
+                 
             </tr>
             <tr class="">
                 <td colspan="2">
@@ -120,7 +120,14 @@ poste
                
             </tr>
           
-            
+            <tr class="">
+                <td>
+                Savoirs 
+                </td>
+                <td>
+                A compléter
+                </td>
+            </tr>
             <tr class="">
                 <td>
                 Savoirs 
